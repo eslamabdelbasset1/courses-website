@@ -1,0 +1,117 @@
+/* ------------------------
+Media Queries
+---------------------------  */
+
+@media (max-width:991px) {
+    .why-us-item,
+    .courses-item {
+        flex: calc((100% / 2) - 30px);
+    }
+    .fun-facts-item {
+        padding: 20px;
+    }
+    .footer-item {
+        flex: calc(100% / 2 - 20px);
+        max-width: calc(100% / 2 - 20px);
+        margin: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .list {
+        display: none;
+    }
+    .toggle {
+        display: block;
+        z-index: 100;
+    }
+    .nav-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: var(--main-color);
+        z-index: 99;
+        padding: 70px 0 0 20px;
+        width: 50%;
+        transition: all .5s;
+        height: 100vh;
+    }
+    .nav-toggle li a {
+        color: #fff;
+        padding: 20px;
+        display: inline-block;
+        transition: all .5s;
+    }
+    .nav-toggle li a:hover {
+        background: var(--color-font);
+    }
+    .home .row {
+        align-items: space-between;
+        flex-direction: column;
+    }
+    .why-us-item {
+        flex: calc((100% / 1) - 30px);
+    }
+    .fun-facts-items,
+    .fun-facts-img {
+        width: 100%;
+    }
+    .testmonials-item {
+        flex: calc(100% / 1 - 20px);
+        max-width: calc(100% / 1 - 20px);
+        margin: 10px;
+    }
+    .contact .contact-img,
+    .contact .contact-form {
+        flex: calc(100% / 1 - 20px);
+        max-width: calc(100% / 1 - 20px);
+        margin: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .why-us-item,
+    .courses-item {
+        flex: calc((100% / 1) - 30px);
+    }
+    .fun-facts-item {
+        flex: calc(100% - 30px);
+    }
+    .footer-item {
+        flex: calc(100% / 1 - 20px);
+        max-width: calc(100% / 1 - 20px);
+        margin: 10px;
+    }
+}
+
+@media (max-width:380px) {
+    .home .home-desc {
+        font-size: 15px;
+        color: #fff;
+        margin: 15px 0 40px;
+    }
+    .home .home-title {
+        font-size: 40px;
+        color: var(--color-font);
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    .home-img span {
+        width: 60px;
+        height: 60px;
+    }
+    .nav-toggle {
+        width: 100%;
+    }
+    .courses-name {
+        font-size: 16px;
+        margin: 0;
+    }
+    .why-us-item {
+        margin: 0px 0px 30px;
+        padding: 15px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
